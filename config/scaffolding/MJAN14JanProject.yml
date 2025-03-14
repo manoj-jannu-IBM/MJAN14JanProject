@@ -26,6 +26,7 @@ packages:
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 - name: DADA_GlobalVariable1
+  version: "1.0"
   gitServerName: MJANGit
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
@@ -34,6 +35,8 @@ services:
 - serviceName: project.mjan14jan.integrations:JDBC
   packages:
   - name: MJAN14JanProject
+    version: "1.0"
+  - name: DADA_GlobalVariable1
     version: "1.0"
   - name: DADA_PublicPrivate
     version: "1.0"
