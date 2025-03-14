@@ -26,7 +26,7 @@ packages:
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 services:
-- serviceName: project.mjan14jan.integrations:DafFlow
+- serviceName: project.mjan14jan.integrations:JDBC
   packages:
   - name: MJAN14JanProject
     version: "1.0"
@@ -42,27 +42,11 @@ services:
     version: 10.7.0.0.53
   - name: SIQACloudStreamsTests
     version: "1.0"
-- serviceName: SIQACloudStreamsTests:connetorOperations
+- serviceName: SIQAJDBCAdapterTests.adapterServices:getData
   packages:
-  - name: SIQACloudStreamsTests
+  - name: SIQAJDBCAdapterTests
     version: "1.0"
-  - name: WmSalesforceProvider
-    version: 10.7.0.0.53
-- serviceName: SIQACloudStreamsTests:createAccountConnectorService
-  packages:
-  - name: SIQACloudStreamsTests
-    version: "1.0"
-  - name: WmSalesforceProvider
-    version: 10.7.0.0.53
-- serviceName: SIQACloudStreamsTests:retrieveAccountConnectorService
-  packages:
-  - name: SIQACloudStreamsTests
-    version: "1.0"
-  - name: WmSalesforceProvider
-    version: 10.7.0.0.53
-- serviceName: SIQACloudStreamsTests:deleteAccountConnectorService
-  packages:
-  - name: SIQACloudStreamsTests
-    version: "1.0"
-  - name: WmSalesforceProvider
-    version: 10.7.0.0.53
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
